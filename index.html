@@ -14,59 +14,64 @@
   </head>
 
   <body>
-    
+ 
       <form class="searchCity">
       <div class="card">
       <div class="serach">
         <input type="text" 
-        
                class="serach-bar"
                placeholder="Enter your City" 
-               id="input-city-name"/>
+               id="input-city-name">
+               
         <button type="submit" id="search-button">Search </button>
         <button id="current-location-button">Current location </button><br>
       </div>
       <br>
-    </form>
+    
+  
 
-      <div class="weather">              
+  <div class="weather">   
+
       <div class="row current-city-weather">
           <div class="col">
           
-            <h1><p class="city-weather" id="city-name">Mannheim</p> </h1> </div>
+            <h1><p class="city-weather" id="city-name">Mannheim</p> </h1>
+           </div>
           
         <div class="col">  
           <h2>
           <span id="currentTemp"> </span>
-        
             <span class="tempfahrcel" >
               <a href="#" class="linkcelsius" id="celsius">°C</a>
               |
               <a href="#" class="linkfahrenhite" id="fahrenheit">°F</a>
          </span>
-        </h2>
-        </p>
-        </div>
+        </h2>  
         </div>
 
-        <div class="row">
+      </div> 
+      
+
+      <div class="row">
           <div class="col">
             <p id="current-day">Sunday October 16, 11:30</p>
             <p id="precipitaion">Partially cloud</p>
-        </div>
+          </div>
+        
 
-        <div class="col">
+          <div class="col">
             <p>Feels like: <span id="temp-feels-like">4</span></p>
             <p>Humidity: <span id="temp-humidity">74</span>%</p>
             <p>Wind: <span id="wind">16</span> km/h</p>
-         
-        </div>
-        </div>
-        
-        </div>
+          </div>
       
+        
+  </div>   
+  </div>
+      
+<!--
   </br>
-    <div class="row bottom">
+      <div class="row bottom">
       <div class="col"></div>
 
       <div class="col border">
@@ -109,12 +114,25 @@
           <div class="row">Fri</div> 🌦️
           <div class="row"><b>20&deg;</b></div>
       </div>
-
-      <div class="col"></div>
   </div>
+  
+</form>
+<br><br><br><br><br>
 </div>
-         
-     
+
+-->
+      </div>
+
+
+  <div class="footer">
+        <h5>
+        <small>
+      <a href="https://github.com/priyankagawas45/WeatherApp" target="_blank">
+        Open-source code</a> by Priyanka Gawas
+      </small>
+      </h5>
+</div>
+
     <script src="src/index.js"></script>
   </body>
 </html>
