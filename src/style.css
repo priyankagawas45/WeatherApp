@@ -1,80 +1,97 @@
-h1 {
-  color: blue;
-  text-align: none;
-  margin: 0;
-  top: 20;
-  display: block;
-  font-size: 80px;
+body {
+  font-family: arial, sans-serif;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+h1 {
+  color: blue;
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+ul {
   margin: 0;
-  height: 100vh;
-  font-family: "Oswald", sans-serif;
+  padding: 0;
 }
 
 li {
-  display: inline;
-}
-.card {
-  background-image: url("../Images/weatherbg2.jpg");
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
+  color: black;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 19px;
+}
+
+li:first-letter {
+  text-transform: capitalize;
+}
+
+.weather-app-wrapper {
+  max-width: 550px;
+  margin: 80px auto;
+}
+
+.weather-app {
+  background-image: url("../Images/background1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 40px;
-  width: 100%;
-  margin: 1em;
-  padding: 3em;
-  max-width: 600px;
-}
-button {
-  background-color: blue;
-  color: white;
-  border: none;
-  font-size: 22px;
-  display: inline-block;
+
+  padding: 30px;
+  border: 2px solid black;
 }
 
-.bottom {
-  font-size: 25px;
+.overview {
+  margin-bottom: 40px;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
+  height: 80px;
+  width: 80px;
+}
+
+.weather-temperature strong {
+  color: rgb(33, 33, 33);
+  font-size: 70px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.weather-temperature .units {
   position: relative;
-}
-.serach {
-  font-size: 20px;
-}
-.weather {
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
+  font-size: 16px;
+  top: -34px;
 }
 
-.serach-bar {
-  color: black;
-  width: 240px;
-  border-color: gray;
-}
-.tempfahrcel {
-  font-size: 20px;
-  color: blue;
-}
-h2 {
-  font-size: 40px;
-  color: blue;
-  padding: 5px;
+.weather-temperature .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
 }
 
-.city-weather {
-  font-size: 35px;
-  margin: 0 auto;
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
 
-.searchForm {
-  font-size: 15px;
-}
-
-.footer h5 {
+.weather-forecast {
+  margin-top: 20px;
   text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 20px;
 }
